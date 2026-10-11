@@ -1,6 +1,7 @@
 <template>
   <div class="article-meta">
     <span>{{ formatDate(date) }}</span>
+    <span v-if="updated">/ 更新于 {{ formatDate(updated) }}</span>
     <span v-if="readingTime">/ {{ readingTime }} 分钟阅读</span>
     <template v-if="tags?.length">
       <span>/</span>
@@ -18,6 +19,10 @@ import { formatDate } from '../lib/page'
 
 defineProps({
   date: {
+    type: String,
+    default: '',
+  },
+  updated: {
     type: String,
     default: '',
   },

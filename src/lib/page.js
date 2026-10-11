@@ -2,7 +2,7 @@ export const site = {
   title: '惜余年的个人博客',
   owner: '惜余年',
   description: '记录 AI 项目、技术实践和成长过程。',
-  github: 'https://github.com/xiyunian1-glitch',
+  github: 'https://github.com/xiyunian1',
 }
 
 export function setPageTitle(title) {

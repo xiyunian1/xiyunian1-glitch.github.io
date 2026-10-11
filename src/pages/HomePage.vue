@@ -162,8 +162,8 @@ const skills = [
 const recentPosts = posts.slice(0, 3)
 
 const projects = [
-  { name: 'WMS 智能仓储辅助决策系统', slug: 'wms-ai-assistant-graduation', note: '我的毕业设计：第一次把 AI 从聊天框接进有登录、有数据、有权限的真实业务系统。' },
-  { name: 'AI 聚合站', slug: 'ai-aggregator-ppt-mult-agent', note: '从一个图片创作平台，长成一个用多 Agent 协作自动生成可编辑 PPT 的系统。' },
+  { name: 'WMS 智能仓储辅助决策系统', slug: 'wms-ai-assistant-graduation', note: '我的毕业设计：第一次把 AI 接进有登录、有数据、有权限的业务系统；毕业后把分析助手改成工具调用式的 Text-to-SQL Agent，并用自建评测集验证。' },
+  { name: 'KitNav AI（原 AI 聚合站）', slug: 'ai-aggregator-ppt-mult-agent', note: '从一个图片创作平台，长成多阶段的 PPT 生成 Agent，后来又补上了运行观测和 MCP Server。' },
 ]
 
 const wechatShown = ref(false)

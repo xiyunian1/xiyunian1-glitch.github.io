@@ -20,7 +20,11 @@
       <h1 class="page-heading detail-heading">{{ post.title }}</h1>
       <p class="page-intro detail-summary">{{ post.summary }}</p>
       <div class="detail-meta-wrap">
-        <ArticleMeta :date="post.published_at" :reading-time="post.reading_time" :tags="post.tags" />
+        <ArticleMeta :date="post.published_at" :updated="post.updated_at" :reading-time="post.reading_time" :tags="post.tags" />
+        <div v-if="post.repo || post.demo" class="detail-links">
+          <a v-if="post.repo" class="text-link" :href="post.repo" target="_blank" rel="noreferrer">GitHub 源码</a>
+          <a v-if="post.demo" class="text-link" :href="post.demo" target="_blank" rel="noreferrer">在线体验</a>
+        </div>
       </div>
       <div class="article-content" v-html="post.content_html" />
     </article>
